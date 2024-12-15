@@ -3,37 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Probability Ontology Simulation</title>
+<title>Probability Simulation</title>
 <link rel="stylesheet" href="app.css">
 </head>
 <body>
 <div class="container">
-<h1>Probability Theory Simulation</h1>
-<!-- Probability Space Selection -->
-<label for="probabilitySpace">Select Probability Space</label>
+<h1>Probability Simulation</h1>
+ 
+        <!-- Probability Space Selection -->
 <select id="probabilitySpace">
 <option value="Coin Toss">Coin Toss</option>
 <option value="Die Roll">Die Roll</option>
 </select>
  
-        <!-- Event Selection -->
-<label for="event">Event (Heads/Tails, Even/Odd)</label>
-<input type="text" id="event" placeholder="Enter 'Heads' or 'Even'" />
+        <!-- Event Input -->
+<input type="text" id="event" placeholder="Enter event (Heads, Tails, Even, Odd)" />
  
-        <!-- Number of Trials -->
-<label for="trials">Number of Trials</label>
-<input type="number" id="trials" placeholder="Enter number of trials" />
+        <!-- Number of Trials Input -->
+<input type="number" id="trials" placeholder="Number of Trials" />
  
         <!-- Simulate Button -->
 <button id="simulateButton">Simulate</button>
  
-        <!-- Display Results -->
+        <!-- Result Display -->
 <div id="resultContainer" class="result"></div>
- 
-        <!-- Information Text -->
-<p class="info-text">
-            Choose a probability space (e.g., Coin Toss, Die Roll), specify the event (e.g., Heads, Even), and enter the number of trials.
-</p>
 </div>
  
     <script src="app.js"></script>

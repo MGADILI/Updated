@@ -1,79 +1,53 @@
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f7fa;
   margin: 0;
   padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-/* Main Container */
 .container {
-  width: 80%;
-  max-width: 800px;
-  margin: 50px auto;
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Title */
-h1 {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
   text-align: center;
+}
+
+h1 {
   color: #0077b6;
-}
-
-/* Form Elements */
-label {
-  font-size: 1.1em;
-  margin-top: 10px;
-  display: block;
-}
-
-select, input[type="text"], input[type="number"] {
-  width: 100%;
-  padding: 10px;
-  font-size: 1.1em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
-
-select:focus, input[type="text"]:focus, input[type="number"]:focus {
-  border-color: #0077b6;
 }
 
 button {
   background-color: #0077b6;
   color: white;
-  font-size: 1.2em;
-  padding: 15px;
   border: none;
-  width: 100%;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
 }
 
 button:hover {
   background-color: #005f8c;
 }
 
-/* Result Section */
+input[type="number"], input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
 .result {
   margin-top: 20px;
   font-size: 1.2em;
-  text-align: center;
   color: #333;
-}
-
-.result p {
-  margin: 10px 0;
-}
-
-/* Info Text */
-.info-text {
-  font-size: 1.1em;
-  text-align: center;
-  color: #0077b6;
-  margin-top: 20px;
 }
