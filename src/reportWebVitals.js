@@ -4,7 +4,7 @@ import { reportWebVitals } from 'web-vitals';
 function sendVitalsToServer(vitals) {
   // For demonstration, we'll just log it, but you can replace this with
   // an API call to send the data to your backend server
-  fetch('http://localhost:3000/api/vitals', {
+  fetch('https://your-server.com/api/vitals', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
