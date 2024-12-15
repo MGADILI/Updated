@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+ 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Probability Simulation</title>
-<link rel="stylesheet" href="app.css">
+<title>Circle Area Calculator</title>
+<!-- Link to the favicon if desired -->
+<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+<!-- Meta for SEO and social media -->
+<meta name="description" content="A simple Circle Area Calculator app built with React" />
+<meta name="author" content="Your Name or Company" />
+<!-- Open Graph Meta Tags (for better social media sharing) -->
+<meta property="og:title" content="Circle Area Calculator" />
+<meta property="og:description" content="A simple Circle Area Calculator app built with React" />
+<meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
+<meta property="og:url" content="http://localhost:3000" />
+<!-- Link to external fonts or styles if needed (Optional) -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<!-- Link to the main CSS file for the app (App.css will be injected later) -->
+<link rel="stylesheet" href="%PUBLIC_URL%/index.css">
+ 
 </head>
+ 
 <body>
-<div class="container">
-<h1>Probability Simulation</h1>
+<!-- Main div where the React app will be mounted -->
+<div id="root"></div>
  
-        <!-- Probability Space Selection -->
-<select id="probabilitySpace">
-<option value="Coin Toss">Coin Toss</option>
-<option value="Die Roll">Die Roll</option>
-</select>
- 
-        <!-- Event Input -->
-<input type="text" id="event" placeholder="Enter event (Heads, Tails, Even, Odd)" />
- 
-        <!-- Number of Trials Input -->
-<input type="number" id="trials" placeholder="Number of Trials" />
- 
-        <!-- Simulate Button -->
-<button id="simulateButton">Simulate</button>
- 
-        <!-- Result Display -->
-<div id="resultContainer" class="result"></div>
-</div>
- 
-    <script src="app.js"></script>
+  <!-- Including the JavaScript bundle for the React app -->
+<!-- This will load the compiled JavaScript from the build process -->
+<script src="%PUBLIC_URL%/static/js/bundle.js"></script>
 </body>
+ 
 </html>

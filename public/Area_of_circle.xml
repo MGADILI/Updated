@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#">
+ 
+    <!-- Define Classes -->
+<rdf:Description rdf:about="#Circle">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+<rdfs:label>Circle</rdfs:label>
+</rdf:Description>
+ 
+    <rdf:Description rdf:about="#Area">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+<rdfs:label>Area</rdfs:label>
+</rdf:Description>
+ 
+    <rdf:Description rdf:about="#Radius">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+<rdfs:label>Radius</rdfs:label>
+</rdf:Description>
+ 
+    <rdf:Description rdf:about="#Pi">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+<rdfs:label>Pi</rdfs:label>
+</rdf:Description>
+ 
+    <rdf:Description rdf:about="#Calculation">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+<rdfs:label>Calculation</rdfs:label>
+</rdf:Description>
+ 
+    <rdf:Description rdf:about="#FormulaForArea">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+<rdfs:label>FormulaForArea</rdfs:label>
+</rdf:Description>
+ 
+    <!-- Define Object Properties -->
+<rdf:Description rdf:about="#hasRadius">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+<rdfs:domain rdf:resource="#Circle"/>
+<rdfs:range rdf:resource="#Radius"/>
+<rdfs:label>hasRadius</rdfs:label>
+</rdf:Description>
+ 
+    <rdf:Description rdf:about="#hasArea">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+<rdfs:domain rdf:resource="#Circle"/>
+<rdfs:range rdf:resource="#Area"/>
+<rdfs:label>hasArea</rdfs:label>
+</rdf:Description>
+ 
+    <rdf:Description rdf:about="#hasPi">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+<rdfs:domain rdf:resource="#Calculation"/>
+<rdfs:range rdf:resource="#Pi"/>
+<rdfs:label>hasPi</rdfs:label>
+</rdf:Description>
+ 
+    <rdf:Description rdf:about="#calculatedBy">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+<rdfs:domain rdf:resource="#Area"/>
+<rdfs:range rdf:resource="#Calculation"/>
+<rdfs:label>calculatedBy</rdfs:label>
+</rdf:Description>
+ 
+    <rdf:Description rdf:about="#usesFormula">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+<rdfs:domain rdf:resource="#Calculation"/>
+<rdfs:range rdf:resource="#FormulaForArea"/>
+<rdfs:label>usesFormula</rdfs:label>
+</rdf:Description>
+ 
+    <rdf:Description rdf:about="#hasFormula">
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+<rdfs:domain rdf:resource="#FormulaForArea"/>
+<rdfs:range rdf:resource="#Parameter"/>
+<rdfs:label>hasFormula</rdfs:label>
+</rdf:Description>
+ 
+    <!-- Define Instances -->
+<rdf:Description rdf:about="#Circle1">
+<rdf:type rdf:resource="#Circle"/>
+<hasRadius rdf:resource="#Radius5"/>
+<hasArea rdf:resource="#Area1"/>
+<rdfs:label>Circle1</rdfs:label>
+</rdf:Description>
+ 
+    <rdf:Description rdf:about="#Radius5">
+<rdf:type rdf:resource="#Radius"/>
+<rdfs:label>5</rdfs:label>
+</rdf:Description>
+ 
+    <rdf:Description rdf:about="#Area1">
+<rdf:type rdf:resource="#Area"/>
+<calculatedBy rdf:resource="#Calculation1"/>
+<rdfs:label>78.54</rdfs:label>
+</rdf:Description>
+ 
+    <rdf:Description rdf:about="#Calculation1">
+<rdf:type rdf:resource="#Calculation"/>
+<usesFormula rdf:resource="#FormulaForArea"/>
+<rdfs:label>Calculation for Area</rdfs:label>
+</rdf:Description>
+ 
+    <rdf:Description rdf:about="#FormulaForArea">
+<rdf:type rdf:resource="#FormulaForArea"/>
+<rdfs:label>Area = π * r^2</rdfs:label>
+</rdf:Description>
+ 
+    <!-- Additional Formula and Constants -->
+<rdf:Description rdf:about="#Pi">
+<rdf:type rdf:resource="#Pi"/>
+<rdfs:label>3.14159...</rdfs:label>
+</rdf:Description>
+ 
+</rdf:RDF>
