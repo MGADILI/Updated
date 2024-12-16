@@ -1,4 +1,16 @@
-import { reportWebVitals } from 'web-vitals';
+import { onCLS, onFID, onFCP, onLCP, onTTFB } from'web-vitals';
+ 
+const reportWebVitals = (onPerfEntry) => {
+if (onPerfEntry && onPerfEntry instanceof Function) {
+onCLS(onPerfEntry);
+onFID(onPerfEntry);
+onFCP(onPerfEntry);
+onLCP(onPerfEntry);
+onTTFB(onPerfEntry);
+  }
+};
+ 
+export default reportWebVitals;
  
 // This function sends the collected web vitals data to a remote server
 function sendVitalsToServer(vitals) {
